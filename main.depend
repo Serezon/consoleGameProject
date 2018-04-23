@@ -1,0 +1,24 @@
+# depslib dependency file v1.0
+1524247357 source:e:\codeblocksshit\consolegameproject\main\pers.cpp
+	<cstdlib>
+	<cmath>
+	<ctime>
+
+1524507512 source:e:\codeblocksshit\consolegameproject\main.cpp
+	<cstdlib>
+	<cmath>
+	<ctime>
+	<iostream>
+	"pers.h"
+
+1524506144 source:e:\codeblocksshit\consolegameproject\pers.cpp
+	<cstdlib>
+	<cmath>
+	<ctime>
+	<iostream>
+
+1524513695 e:\codeblocksshit\consolegameproject\pers.h
+	<iostream>
+	<cstdlib>
+	<ctime>
+
