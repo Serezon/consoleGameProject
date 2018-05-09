@@ -6,13 +6,13 @@ using namespace std;
 
 class person
 {
-    short armor, healthPoints, basicAttack, attackSpeed, weaponDamage, agility, healingPoints, clan;
-    bool alive;
-    char typeOfCharacter;
-
 
     public:
-        person(char p, short k)
+        int armor, healthPoints, basicAttack, attackSpeed, weaponDamage, agility, healingPoints, clan;
+        bool alive;
+        char typeOfCharacter;
+
+        person(char p, int k)
         {
             typeOfCharacter=p;
             clan=k;
@@ -72,15 +72,18 @@ class person
             }
             if(clan!=opponent.clan) // якщо люди ≥з р≥зних клан≥в
             {
-                if(typeOfCharacter==opponent.typeOfCharacter && typeOfCharacter=='l')
+                if(typeOfCharacter==opponent.typeOfCharacter)
                 // якщо обидва лицар≥
                 {
-                    //cout << "healthPoints = " << healthPoints << ", opponent healthPoints = " << opponent.healthPoints << endl;
+
                     while ( healthPoints>0 && opponent.healthPoints>0 ) {
+                            cout << "healthPoints = " << healthPoints << ", opponent healthPoints = " << opponent.healthPoints << endl;
 
                         if ( opponent.agility <= rand()%100 ) {
                             opponent.healthPoints -= (basicAttack + weaponDamage) * attackSpeed
                             * (100 - opponent.armor) / 100;
+                            cout << (basicAttack + weaponDamage) * attackSpeed
+                            * (100 - opponent.armor) / 100 << endl;
                             if ( opponent.healthPoints<=0 ) {
                                 opponent.alive = false;
                                 break;
@@ -91,13 +94,17 @@ class person
                         if ( agility <= rand()%100 ) {
                             healthPoints -= (opponent.basicAttack + opponent.weaponDamage)
                             * opponent.attackSpeed * (100 - armor) / 100;
+                            cout << (opponent.basicAttack + opponent.weaponDamage)
+                            * opponent.attackSpeed * (100 - armor) / 100 << "EL KONGRO" << endl;
                             if ( healthPoints<=0 ) {
                                 alive = false;
                                 break;
                             }
 
                         }
-                    }
+
+                        system("pause");
+                    } // While end
 
 
                 }

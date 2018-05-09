@@ -4,11 +4,13 @@
 	<cmath>
 	<ctime>
 
-1524507512 source:e:\codeblocksshit\consolegameproject\main.cpp
+1525894818 source:e:\codeblocksshit\consolegameproject\main.cpp
 	<cstdlib>
 	<cmath>
 	<ctime>
 	<iostream>
+	<vector>
+	<iterator>
 	"pers.h"
 
 1524506144 source:e:\codeblocksshit\consolegameproject\pers.cpp
@@ -17,7 +19,7 @@
 	<ctime>
 	<iostream>
 
-1524513695 e:\codeblocksshit\consolegameproject\pers.h
+1525894831 e:\codeblocksshit\consolegameproject\pers.h
 	<iostream>
 	<cstdlib>
 	<ctime>
